@@ -5,6 +5,11 @@
 :gift: https://docs.moodle.org/3x/en/GIFT_format[GIFT]
 :aiken: https://docs.moodle.org/3x/en/Aiken_format[Aiken]
 
+Membre de l'équipe : 
+
+ - Rémy Mestre
+ - Olivier Leperlier
+
 [{topic}]
 = Etude de cas 2020 : icon:check-square-o[] {soft} 
 
