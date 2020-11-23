@@ -1,83 +1,66 @@
-:societe: http://www.irit.fr[Laboratoire IRIT]
-:soft: MIU (Management of Irit-Ut2j)
-:socurl: https://bit.ly/irit-ut2j
+:soft: Original Quiz Player
 :experimental:
 :imagesdir: images
+:icons: font
+:gift: https://docs.moodle.org/3x/en/GIFT_format[GIFT]
+:aiken: https://docs.moodle.org/3x/en/Aiken_format[Aiken]
 
 [{topic}]
-== Etude de cas : icon:list-alt[] {soft} icon:dollar[]
+= Etude de cas 2020 : icon:check-square-o[] {soft} 
 
-cf. la version HTML de ce fichier.
+ifndef::definitions[]
+include::definitions.txt[]
+endif::definitions[]
+
+ifdef::slides[:leveloffset: -1]
 
 [{topic}]
-=== Cahier des charges
-
-image:logo-irit.png[SLAT, width=40%]
+== Cahier des charges
 
 ifdef::slides[=== !]
-Le `{societe}` est un des plus gros laboratoire informatique de France.
-C'est une unité mixte de recherche, ce qui signifie qu'en plus du CNRS,
-elle a d'autres tutelles (les 3 universités toulousaine, l'INPT, etc.).
+{soft} (OQP) est un projet collaboratif de développement devant permettre simplement :
 
-ifdef::slides[=== !]
-Chaque tutelle est dotée d'un représentant local du laboratoire qui fait
-le lien entre le laboratoire et la tutelle.
-Pour l'UT2J, ce représentant, c'est moi ({jmb}).
-Les membres UT2J du `{societe}` sont organisés en équipes.
-Ils se partagent un buget alloué chaque année par l'université
-(environ 38K€ pour 2017).
+* Pour un concepteur de quiz  (`Quiz`) :
+** décrire les questions du quiz et les réponses associées
+** décrire les paramètres supplémentaires
+* Pour un joueur (celui répond au quiz) :
+** jouer seul ou contre les autres joueurs
+** manipuler une interface individuelle de suivie (scores, progressions, ...)
 
-ifdef::slides[=== !]
-Parmi les responsabilité du responsable IRIT-UT2J, on trouve de nombreuses
-tâches administratives (au point de devoir maintenir une F.A.Q - cf. {socurl}).
-
-Celles qui sont le plus consomatrices d'énergie sont les tâches en relation avec les dépenses.
+//.Software architecture
+//image::CardGamePlayer.svg[width=100%]
 
 ifdef::slides[=== !]
 
-ifndef::slides[.exemple de "Demande d'achats" (un simple fichier excel)]
-image::demandeAchat.png[width=80%]
+En tant que spécialiste de la modélisation d'applications mobiles, vous aurez la charge de la modélisation des interfaces de l'application. 
 
 ifdef::slides[=== !]
+Voici quelques caractéristiques et besoins clients (en vrac, mais numérotée pour référence) :
 
-Je vous sollicite donc pour la modélisation d'une application mobile qui sera
-potentiellement développée dans le future, et qui permettra de faciliter cette gestion.
-Pour simplifier les description suivantes, nous appelerons cette application
-MIU (_**M**anagement of **I**RIT-**U**T2J_)footnote:[En clin d'oeil à D. Hofstadter].
+. Le logiciel doit permettre à une personne de décrire les questions et les réponses associées (type, niveau, mots-clés, ...)
+. Le logiciel doit permettre à une personne de décrire les paramètres d'un quiz (questions mélangées, choisies au hazard, ...)
+. Le logiciel doit permettre à une personne de répondre à un quiz
+. Le logiciel doit permettre à plusieurs personnes de jouer ensemble à un même quiz
 
 ifdef::slides[=== !]
-Voici quelques caractéristiques et besoins clients (en vrac) :
+Voici quelques options que vous pourrez considérer (en vrac, mais numérotée pour références) :
 
-- MIU devra fonctionner sur des mobiles et tablettes {Android}.
-- On pourra différencier les rôles des personnes utilisant l'application (chercheurs, doctorants, responsable, gestionnaire).
-- On imaginera qu'il existe un accès (Web, fichier `.json`, Google Doc) aux informations concernant les membres.
-- Chaque utilisateur poura saisir une dépense (de type achats ou mission).
-Une dépense peut être prévisionnelle (devis pour un restaurant par exemple, ou déplacement à l'étranger),
-précise (achat de matériel sur devis) ou confirmée (remboursement de mission a posteriori par exemple).
-- Un utilisateur ne pourra pas engager de dépense si celle-ci dépasse le budget de son équipe.
-ifdef::slides[=== !]
-- La gestionnaire ou le responsable peuvent mettre à jour les montants de dépenses.
-- Concernant les frais, chacun aura sur sa "page personnelle" les informations
-concernant le solde global du compte de son équipe.
-- On pourra envisager toute option utile pour le futur (comme le calcul d'avance sur mission).
-- La gestionnaire et le responsable seront systématiquement informé de toute déclaration d'intention de dépense.
+[start=5]
+. Le logiciel doit permettre à une personne d'importer/exporter les questions selon plusieurs formats standards ({gift}, {aiken}, ...)
+. Le logiciel doit permettre à une personne d'importer/exporter des quiz existants
+. Le logiciel doit permettre de sauvegarder puis de reprendre 
 
 ifdef::slides[=== !]
 Quelques commentaires :
 
-- Chaque membre est toujours rattaché à une équipe (et une seule)
-- Chaque équipe dispose d'un budget propre (division au prorata de ses membres du budget global).
-- Un certain nombre de dépenses sont "communes" et viennent imputer le budget global (seuls la
-gestionnaire et le responsable peuvent saisir ces dépenses)
-- Les dépenses sont consultables (lecture seule) par tous les membres UT2 du {societe}.
+- Comme "Minimal Viable Product" on pourra imaginer le cas d'un logiciel qui affiche les questions une par une, saisie les réponses et affiche le score final. On pourra commencer par une question, puis par un fichier d'entrée (type `CSV`) de questions, puis améliorer au fur et à mesure. 
+- On se limitera aux quiz sans images ou suppléments, dans un premier temps (uniquement du texte).
+
 
 ifdef::slides[=== !]
 
-ifndef::slides[.Exemple de gestion actuelle des dépenses]
-image::finances-IRIT-UT2J.png[width=100%]
-
 [{topic}]
-=== Questions
+== Questions
 
 . Réalisez un diagramme des cas d’utilisation de cette application.
 +
@@ -104,11 +87,8 @@ de votre application.
 .Exemple 2015/2016 d'une maquette en Balsamiq (Ballades VTT)
 image::balsamiq.png[]
 
-Un écran est composé d’éléments structurels.
+TIP: Un écran est composé d’éléments structurels.
 Il peut donc être représenté avec un diagramme de classe.
-
-.Exemple 2015/2016 (Ballades VTT)
-image::voisMaBalade/enchainement.png[width=100%]
 
 Les enchainements d’écrans peuvent être décrits comme des comportements.
 On peut utiliser :
@@ -119,33 +99,33 @@ On peut utiliser :
 
 [[enchainementEtat]]
 .Une correction possible - Exemple 2016/2017 (SLAT Parapente)
-plantuml::images/SLAT-parapente/enchainement.plantuml[enchainement]
+image::SLAT-parapente/enchainement.png[enchainement]
 
 [[enchainementSLAT]]
 .Une correction possible - Autre exemple 2016/2017 (SLAT Parapente)
 image::enchainement-slat.png[]
 
 [{topic}]
-=== Outils
+== Outils
 
-- Pour les mockups/sketchs : https://iutblagnac.mybalsamiq.com/projects/miu/
+- Pour les mockups/sketchs : https://iutblagnac.mybalsamiq.com/projects/cardgameplayer2019
 +
 [TIP]
 =====
 Vous pouvez accéder aux dessins de :
 
 - 2015/2016 (https://iutblagnac.mybalsamiq.com/projects/voismabalade).
-- l'an dernier (https://iutblagnac.mybalsamiq.com/projects/slat-parapente).
+- 2017 (https://iutblagnac.mybalsamiq.com/projects/slat-parapente).
+- un exemple de 2018 (https://iutblagnac.mybalsamiq.com/projects/miu2018-mgn/grid)
 =====
 +
-- Pour {uml} : {p4e}, {plantuml}
-
+- Pour {uml} : {papyrus}, {plantuml}, StarUML
 
 [{topic}]
-=== Résultats attendus
+== Résultats attendus
 
 [{incremental}]
-- Rapport au format `.pdf`
+- Rapport au format `.pdf` ou Google Doc
 - Démo au format de votre choix (PPT/PDF, Vidéo)
 +
 .Exemple de vidéo réalisée en 2015/2016
@@ -167,7 +147,7 @@ https://www.dropbox.com/s/8yxu6s9q8ekf4e1/Lahitette_Lassus-Pomes_PresentationApp
 
 // ------------------------------------------ Evaluation
 [{topic}]
-=== Evaluation
+== Evaluation
 
 Rappelons les conseils habituels :
 
@@ -187,8 +167,8 @@ L'évaluation portera principalement sur les critères suivants :
 | Diagramme des Classes Domaine		| Correction, pertinence	| 10%
 | Maquettes utilisateur / Écrans	| Correction, pertinence	| 20%
 | Diagrammes d'enchainement d'écran		| Correction, pertinence	| 20%
-| Cohérence inter-modèles (SNI/DSS, UC/DSS/DS/DCP)	|  Correction, pertinence	| 15%
-| Communication/Présentations/Ignite					         | subjectif :-)				| 15%
+| Cohérence inter-modèles (Maquettes/DSS, UC/DSS/DS/DCP)	|  Correction, pertinence	| 15%
+| Communication/Présentations					         | subjectif :-)				| 15%
 | Clarté – Présentation du Dossier					         | subjectif :-)				| 10%
 |=========================================================
 
@@ -201,3 +181,4 @@ vous permet de vous auto-évaluer.
 ====
 
 ifdef::slides[:leveloffset: +1]
+
