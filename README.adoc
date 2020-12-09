@@ -14,6 +14,21 @@
 [{topic}]
 = Explication du résultat rendu :
 
+ - Pour réaliser les différents diagrammes nous avons utilisé le logiciel de
+   modélisation StarUML. Celui ci nous a permis de synchroniser l'ensemble
+   de nos diagrammes et de travailler sur les mêmes classes, méthodes etc.
+   Par la suite ce logiciel nous a permis d'exporter notre projet sous format
+   HTML, avec le fichier index.html ainsi qu'un ensemble de dossier et de
+   fichiers qui constituent notre projet de modélisation. 
+   A côté de cela, nous avons utilisé Figma pour créer nos maquettes
+   d'application mobile avec les enchaineent d'écran qui sont intégrés.
+   
+ - Pour accéder aux différents diagrammes il faut aller sur index.html, 
+   puis cliquer sur "Les diagrammes".
+   Pour accéder aux maquettes intéractives, il faut aller sur index.html,
+   puis cliquer sur "Maquettes". 
+
+
 [{topic}]
 = Etude de cas 2020 : icon:check-square-o[] {soft} 
 
