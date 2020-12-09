@@ -12,6 +12,9 @@
  - Olivier Leperlier
 
 [{topic}]
+= Explication du résultat rendu :
+
+[{topic}]
 = Etude de cas 2020 : icon:check-square-o[] {soft} 
 
 ifndef::definitions[]
