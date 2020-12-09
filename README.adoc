@@ -12,7 +12,7 @@
  - Olivier Leperlier
 
 [{topic}]
-= Explication du résultat rendu :
+= Explication du résultat rendu : {soft}
 
  - Pour réaliser les différents diagrammes nous avons utilisé le logiciel de
    modélisation StarUML. Celui ci nous a permis de synchroniser l'ensemble
@@ -26,17 +26,7 @@
  - Pour accéder aux différents diagrammes il faut aller sur index.html, 
    puis cliquer sur "Les diagrammes".
    Pour accéder aux maquettes intéractives, il faut aller sur index.html,
-   puis cliquer sur "Maquettes". 
-
-
-[{topic}]
-= Etude de cas 2020 : icon:check-square-o[] {soft} 
-
-ifndef::definitions[]
-include::definitions.txt[]
-endif::definitions[]
-
-ifdef::slides[:leveloffset: -1]
+   puis cliquer sur "Maquettes".
 
 [{topic}]
 == Cahier des charges
