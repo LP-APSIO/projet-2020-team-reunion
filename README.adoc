@@ -5,7 +5,8 @@
 :gift: https://docs.moodle.org/3x/en/GIFT_format[GIFT]
 :aiken: https://docs.moodle.org/3x/en/Aiken_format[Aiken]
 
-Membres de l'équipe : 
+[{topic}]
+= Membres de l'équipe : 
 
  - Rémy Mestre
  - Olivier Leperlier
