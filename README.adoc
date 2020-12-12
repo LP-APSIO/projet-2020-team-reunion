@@ -23,10 +23,12 @@
    A côté de cela, nous avons utilisé Figma pour créer nos maquettes
    d'application mobile avec les enchainements d'écran qui sont intégrés.
    
- - Pour accéder aux différents diagrammes il faut aller sur index.html, 
-   puis cliquer sur "Diagrams".
-   Pour accéder aux maquettes intéractives, il faut aller sur index.html,
-   puis cliquer sur "Figma models".
+ - Le site est accessible à cette url : https://lp-apsio.github.io/projet-2020-team-reunion/
+
+ - Pour naviguer entre nos différents travaux, un menu en haut à droite de la page est disponible.
+   Onglet "Home" pour des informations générales sur notre projet
+   Onglet "Diagrams" pour les différents diagrammes que nous avons réalisés
+   Onglet "Figma models" pour les maquettes interactives que nous avons réalisées
 
 // ------------------------------------------ Evaluation
 [{topic}]
