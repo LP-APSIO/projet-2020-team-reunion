@@ -35,21 +35,4 @@
 | Figma models	  | Les maquettes interactives que nous avons réalisées  
 |=========================================================
 
-// ------------------------------------------ Evaluation
-[{topic}]
-== Auto-évaluation
-
-[align="center",width="90%",cols="6,^4,^2",options="header"]
-|=========================================================
-| Critère											 			| Poids approximatif | Auto-evaluation
-| Diagramme des UC									| 10% | /10
-| Diagramme des Classes Domaine		  | 10% | /10
-| Maquettes utilisateur / Écrans	  | 20% | /10
-| Diagrammes d'enchainement d'écran	| 20% | /10
-| Cohérence inter-modèles (Maquettes/DSS, UC/DSS/DS/DCP)	| 15% | /10
-| Communication/Présentations					         | 15% | /10
-| Clarté – Présentation du Dossier					   | 10% | /10
-|=========================================================
-
-
 
