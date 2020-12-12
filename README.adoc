@@ -35,13 +35,13 @@
 [align="center",width="90%",cols="6,^4,^2",options="header"]
 |=========================================================
 | Critère											 			| Poids approximatif | Auto-evaluation
-| Diagramme des UC									| 10%
-| Diagramme des Classes Domaine		  | 10%
-| Maquettes utilisateur / Écrans	  | 20%
-| Diagrammes d'enchainement d'écran	| 20%
-| Cohérence inter-modèles (Maquettes/DSS, UC/DSS/DS/DCP)	| 15%
-| Communication/Présentations					         | 15%
-| Clarté – Présentation du Dossier					   | 10%
+| Diagramme des UC									| 10% | /20
+| Diagramme des Classes Domaine		  | 10% | /20
+| Maquettes utilisateur / Écrans	  | 20% | /20
+| Diagrammes d'enchainement d'écran	| 20% | /20
+| Cohérence inter-modèles (Maquettes/DSS, UC/DSS/DS/DCP)	| 15% | /20
+| Communication/Présentations					         | 15% | /20
+| Clarté – Présentation du Dossier					   | 10% | /20
 |=========================================================
 
 
