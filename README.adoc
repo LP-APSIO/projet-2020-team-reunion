@@ -26,12 +26,14 @@
  - Le site est accessible à cette url : https://lp-apsio.github.io/projet-2020-team-reunion/
 
  - Pour naviguer entre nos différents travaux, un menu en haut à droite de la page est disponible.
-[Navigation]
-====
-Onglet "Home" pour des informations générales sur notre projet
-Onglet "Diagrams" pour les différents diagrammes que nous avons réalisés
-Onglet "Figma models" pour les maquettes interactives que nous avons réalisées  
-====
+
+[align="center",width="90%",cols="4,^6",options="header"]
+|=========================================================
+| Onglet											 			| Description
+| Home									| Informations générales sur notre projet
+| Diagrams		  | Les différents diagrammes que nous avons réalisés
+| Figma models	  | Les maquettes interactives que nous avons réalisées  
+|=========================================================
 
 // ------------------------------------------ Evaluation
 [{topic}]
