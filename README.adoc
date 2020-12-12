@@ -15,8 +15,8 @@
 = Explication du résultat rendu : {soft}
 
  - Pour réaliser les différents diagrammes nous avons utilisé le logiciel de
-   modélisation StarUML. Celui ci nous a permis de synchroniser l'ensemble
-   de nos diagrammes et de travailler sur les mêmes classes, méthodes etc.
+   modélisation StarUML. Celui-ci nous a permis de synchroniser l'ensemble
+   de nos diagrammes et de travailler sur les mêmes classes, méthodes, etc.
    Par la suite ce logiciel nous a permis d'exporter notre projet sous format
    HTML, avec le fichier index.html ainsi qu'un ensemble de dossiers et de
    fichiers qui constituent notre projet de modélisation. 
@@ -37,7 +37,7 @@
 
 // ------------------------------------------ Evaluation
 [{topic}]
-== Auto-evaluation
+== Auto-évaluation
 
 [align="center",width="90%",cols="6,^4,^2",options="header"]
 |=========================================================
