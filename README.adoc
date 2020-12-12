@@ -27,7 +27,7 @@
 
  - Pour naviguer entre nos différents travaux, un menu en haut à droite de la page est disponible.
 
-[align="center",width="90%",cols="6,^10",options="header"]
+[align="center",width="90%",cols="6,10",options="header"]
 |=========================================================
 | Onglet											 			| Description
 | Home									| Informations générales sur notre projet
